@@ -16,9 +16,9 @@ $(function() {
 		this.$element = createColumn();
 
 		function createColumn() {
-			var $column = $('div').addClass('column');
+			var $column = $('<div>').addClass('column');
 			var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
-			var $columnCardList = $('ul').addClass('column-card-list');
+			var $columnCardList = $('<ul>').addClass('column-card-list');
 			var $columnDelete = $('<button>').addClass('btn-delete').text('x');
 			var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
 		// ADDING EVENTS
