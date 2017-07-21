@@ -1,0 +1,61 @@
+body {
+	margin: 50px auto;
+	padding: 20px;
+}
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #2f93b4;
+	position: relative;
+}
+.column {
+	text-align: center;
+	border: 5px dashed #2f93b4;
+	margin: 15px 0;
+	position: relative;
+	right: 4%;
+}
+.create-column {
+	top: 17%;
+	left: 50%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+.column-title {
+	color: #337ab7;
+}
+.first {
+	color: red;
+}
+.column-container div:nth-of-type(2) h2 {
+	color: #f0ad4e;
+}
+.third {
+	color: #5cb85c;
+}
+.btn-delete {
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}
+.card {
+	border: 2px solid #ccc;
+	position: relative;
+	display: inline-block;
+	margin: 15px 0;
+}
+li {
+	list-style-type: none;
+}
+.card-description {
+	text-align: center;
+	padding: 17px 0;
+}
+.btn-delete-card {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #d9534f;
+	border: none;
+	color: #fff;

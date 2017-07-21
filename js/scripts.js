@@ -16,11 +16,11 @@ $(function() {
 		this.$element = createColumn();
 
 		function createColumn() {
-			var $column = $('<div>').addClass('column');
+			var $column = $('<div>').addClass('column col-xs-3 col-xs-offset-1');
 			var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
 			var $columnCardList = $('<ul>').addClass('column-card-list');
-			var $columnDelete = $('<button>').addClass('btn-delete').text('x');
-			var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
+			var $columnDelete = $('<button>').addClass('btn-delete btn btn-danger').text('x');
+			var $columnAddCard = $('<button>').addClass('add-card btn btn-primary').text('Add a card');
 		// ADDING EVENTS
 
 			$columnDelete.click(function() {
@@ -58,9 +58,9 @@ $(function() {
 
 		function createCard() {
 			// CREATING THE BLOCKS
-			var $card = $('<li>').addClass('card');
+			var $card = $('<li>').addClass('card col-xs-12 col-md-4 col-md-offset-1');
 			var $cardDescription = $('<p>').addClass('card-description').text(self.description);
-			var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+			var $cardDelete = $('<button>').addClass('btn-delete-card').text('x');
 			// ADDING EVENT
 			$cardDelete.click(function() {
 				self.removeCard();
@@ -112,8 +112,13 @@ $(function() {
 	//CREATING NEW CARDS COPIES
 	var card1 = new Card('New task');
 	var card2 = new Card('Create kanban boards');
+	var card3 = new Card('Style for kanban')
 	
 	//ADDING CARD TO COLUMNS
 	todoColumn.addCard(card1);
 	doingColumn.addCard(card2);
+	doneColumn.addCard(card3);
+	//ADDING CLASS FOR CSS
+	$('h2:first').addClass('first');
+	$('h2:last').addClass('third');
 });
