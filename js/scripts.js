@@ -112,7 +112,7 @@ $(function() {
 	//CREATING NEW CARDS COPIES
 	var card1 = new Card('New task');
 	var card2 = new Card('Create kanban boards');
-	var card3 = new Card('Style for kanban')
+	var card3 = new Card('Style for kanban board')
 	
 	//ADDING CARD TO COLUMNS
 	todoColumn.addCard(card1);
