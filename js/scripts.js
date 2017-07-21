@@ -19,7 +19,7 @@ $(function() {
 			var $column = $('<div>').addClass('column col-xs-3 col-xs-offset-1');
 			var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
 			var $columnCardList = $('<ul>').addClass('column-card-list');
-			var $columnDelete = $('<button>').addClass('btn-delete btn btn-danger').text('x');
+			var $columnDelete = $('<button>').addClass('btn-delete btn-danger').text('x');
 			var $columnAddCard = $('<button>').addClass('add-card btn btn-primary').text('Add a card');
 		// ADDING EVENTS
 
