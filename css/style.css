@@ -10,10 +10,11 @@ h1 {
 }
 .column {
 	text-align: center;
-	border: 5px dashed #2f93b4;
 	margin: 15px 0;
 	position: relative;
 	right: 4%;
+	background: url('https://tablice-magnetyczne.com/userdata/gfx/e63e426f2ac8dcd0ae8182ef442ef7e7.jpg');
+	background-position: 50%;
 }
 .create-column {
 	top: 17%;
@@ -44,6 +45,7 @@ h1 {
 	position: relative;
 	display: inline-block;
 	margin: 15px 0;
+	background-color: #fff;
 }
 li {
 	list-style-type: none;
