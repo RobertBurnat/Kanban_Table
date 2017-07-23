@@ -58,7 +58,7 @@ $(function() {
 
 		function createCard() {
 			// CREATING THE BLOCKS
-			var $card = $('<li>').addClass('card col-xs-12 col-md-4 col-md-offset-1');
+			var $card = $('<li>').addClass('card');
 			var $cardDescription = $('<p>').addClass('card-description').text(self.description);
 			var $cardDelete = $('<button>').addClass('btn-delete-card').text('x');
 			// ADDING EVENT
